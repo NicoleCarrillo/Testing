@@ -1,4 +1,3 @@
-#in routes.js
 
 const fs = require("fs");
 
@@ -9,7 +8,7 @@ const requestListener = (req, res) => {
     res.write("<html>");
     res.write("<head><title>All the Feels</title></head>");
     res.write(
-      '<body><h1>Hey there, welcome to the mood tracker!</h1><p>Enter your mood below and hit send to save your mood.</p><form action = "/mood" method="POST"><input type = "text" name="mood"><button type="submit">Send</button></body>'
+      '<body><h1>Hey there, welcome to the mood tracker!</h1><p>Enter your mood below and hit send to save your mood.</p><form action = "/mood" method="POST" ><input type = "text" name="mood"><button>Send</button></body>'
     );
     res.write("</html>");
     return res.end();
